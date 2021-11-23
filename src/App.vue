@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <Header/>
     <Main/>
     <Footer/>
@@ -27,9 +27,18 @@ export default {
     margin: 0;
     padding: 0;
   }
+
   #app {
+    padding: 20px;
     height: 100vh;
+    overflow: hidden;
+  }
+
+  header,
+  section.content,
+  footer {
     padding: 10px;
+    border: 2px solid #000;
   }
 
 </style>
